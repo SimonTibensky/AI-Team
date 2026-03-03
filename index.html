@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Team | Budúcnosť v našich rukách</title>
+    <meta name="description" content="Sme 5-členný tím expertov na umelú inteligenciu. Vyvíjame inovatívne riešenia.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- SEO & Social Media -->
+    <meta property="og:title" content="AI-Team | Inovatívne AI riešenia">
+    <meta property="og:description"
+        content="Sme tím expertov na umelú inteligenciu z FEI STU. Vyvíjame riešenia na mieru.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aiteam-our.sk">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <canvas id="constellation-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="nav-logo">AI-TEAM</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Domov</a></li>
+                <li><a href="#about">O nás</a></li>
+                <li><a href="#services">Služby</a></li>
+                <li><a href="#cases">Referencie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#blog">Výstupy</a></li>
+                <li><a href="#team">Tím</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="panel-1" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="layer-badge" style="margin-bottom: 20px; display: inline-block;">AI-TEAM BRATISLAVA</span>
+                <h1 class="title-gradient">Tvoríme AI riešenia, ktoré šetria čas a zvyšujú výkon tímov.</h1>
+                <p>Sme 6-členný tím expertov z FEI STU. Pomáhame firmám naskočiť na vlnu umelej inteligencie cez overené
+                    prototypy a škálovateľné systémy.</p>
+                <div style="margin-top: 30px; display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="#projects" class="btn btn-primary">Pozrieť projekty</a>
+                    <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Kontaktovať nás</a>
+                </div>
+            </div>
+
+            <div class="hero-value-panel glass-panel" data-aos="fade-left">
+                <div class="hero-trust-line">
+                    Spolupracovali sme s univerzitami a startupmi v SR a EU.
+                </div>
+                <!-- Quick Value Props -->
+                <div class="hero-feature-grid">
+                    <div class="hero-feature-card" data-aos="fade-up">
+                        <div class="prop-icon">⚡</div>
+                        <div class="prop-content">
+                            <h4>AI prototyp do 2–6 týždňov</h4>
+                            <p>Overíme váš nápad na reálnych dátach.</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="prop-icon">💬</div>
+                        <div class="prop-content">
+                            <h4>LLM Chatboty & RAG</h4>
+                            <p>Firemné znalosti z dokumentov a intranetu.</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="prop-icon">👁️</div>
+                        <div class="prop-content">
+                            <h4>Computer Vision</h4>
+                            <p>Detekcia chýb, objektov a anomálií.</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="prop-icon">🚀</div>
+                        <div class="prop-content">
+                            <h4>Nasadenie & MLOps</h4>
+                            <p>Monitoring, verzovanie, škálovanie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="panel-2">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div class="about-text">
+                    <h2 class="title-gradient">Sme mostom medzi výskumom a reálnym biznisom</h2>
+                    <p style="margin-top: 20px; color: var(--text-slate); line-height: 1.8;">
+                        AI-Team vznikol na pôde FEI STU ako reakcia na narastajúcu potrebu firiem integrovať umelú
+                        inteligenciu efektívne a bezpečne. Nie sme len developeri – sme výskumný tím, ktorý rozumie
+                        matematike za modelmi a vie ju premeniť na kód, ktorý zarába.
+                    </p>
+                    <p style="margin-top: 15px; color: var(--text-slate); line-height: 1.8;">
+                        Naša misia je jednoduchá: zbaviť tímy repetitívnej práce a dať im do rúk nástroje, ktoré
+                        predpovedajú budúcnosť. Či už ide o zložité spracovanie obrazu alebo nasadenie vlastných
+                        jazykových modelov, prinášame riešenia postavené na dátach, nie na domnienkach.
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="#team" class="btn btn-outline">Spoznajte našich expertov</a>
+                    </div>
+                </div>
+                <div class="glass-panel" style="padding: 40px; text-align: center;">
+                    <div class="title-gradient" style="font-size: 3rem; font-weight: 800;">12+</div>
+                    <p>Funkčných prototypov</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--glass-border);">
+                    <div class="title-gradient" style="font-size: 3rem; font-weight: 800;">5+</div>
+                    <p>Odvetví (Industry 4.0, Finance, Retail)</p>
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid var(--glass-border);">
+                    <div class="title-gradient" style="font-size: 3rem; font-weight: 800;">3+</div>
+                    <p>Roky intenzívneho vývoja</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="panel-3">
+        <div class="container">
+            <h2 class="title-gradient section-title">Naše Služby</h2>
+            <div class="grid grid-3">
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">AI Audit & Workshop</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Mapovanie vašich procesov a identifikácia 3
+                        top use-casov, kde AI prinesie okamžitú hodnotu.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Strategický Roadmap</div>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Proof of Concept (POC)</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Rýchly funkčný prototyp (2-6 týždňov) na
+                        overenie technickej realizovateľnosti vášho AI nápadu.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Funkčné demo</div>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">LLM Chatboty & RAG</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Vlastné systémy nad firemnými dokumentami.
+                        Bezpečné GPT riešenia bez úniku dát von z firmy.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Custom AI Copilot</div>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Automatizácie & Integrácie</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Prepojenie AI modelov s vaším CRM/ERP cez
+                        API. Automatizácia workflowov a spracovania dát.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Prepojený ekosystém</div>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">Computer Vision</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Kontrola kvality vo výrobe, detekcia
+                        anomálií a automatické vyhodnocovanie obrazových dát.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Inšpekčný systém</div>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 15px;">MLOps & Nasadenie</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-slate);">Zabezpečenie škálovateľnosti a monitoringu
+                        vašich modelov v cloude alebo on-premise.</p>
+                    <div class="output-type"
+                        style="margin-top: 15px; font-size: 0.8rem; border-top: 1px solid var(--glass-border); padding-top: 10px;">
+                        Výstup: Robustná infraštruktúra</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="panel-9" id="team">
+        <div class="container">
+            <h2 class="title-gradient section-title">Náš Tím</h2>
+            <p
+                style="text-align: center; color: var(--text-slate); margin-bottom: 50px; max-width: 700px; margin-inline: auto;">
+                Sme skupina výskumníkov a inžinierov z FEI STU, ktorých spája vášeň pre umelú inteligenciu a jej
+                praktické využitie.
+            </p>
+            <div class="team-grid">
+                <!-- Peter -->
+                <div class="team-card" data-aos="zoom-in">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&auto=format&fit=crop"
+                                    alt="Peter S">
+                            </div>
+                            <div class="member-info">
+                                <h3>Peter S.</h3>
+                                <p class="role">AI Team Lead & Architekt</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Návrh systémovej architektúry</li>
+                                <li>• Expertíza v Computer Vision</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/peters-placeholder" target="_blank">LinkedIn</a>
+                                <a href="https://github.com/peters-placeholder" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Marek -->
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop"
+                                    alt="Marek K">
+                            </div>
+                            <div class="member-info">
+                                <h3>Marek K.</h3>
+                                <p class="role">Machine Learning Engineer</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Vývoj LLM a RAG systémov</li>
+                                <li>• Trénovanie vlastných modelov</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/marekk-placeholder" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lucia -->
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
+                                    alt="Lucia M">
+                            </div>
+                            <div class="member-info">
+                                <h3>Lucia M.</h3>
+                                <p class="role">Data Scientist</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Analýza dát a preprocessing</li>
+                                <li>• Štatistické modelovanie</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/luciam-placeholder" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Radoslav -->
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="initials-avatar">RV</div>
+                            <div class="member-info">
+                                <h3>Radoslav V.</h3>
+                                <p class="role">Full-stack Developer</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Integrácia AI do web aplikácií</li>
+                                <li>• Frontend UI/UX (React/Next.js)</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://github.com/vargic-placeholder" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Jakub -->
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="member-img">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop"
+                                    alt="Jakub P">
+                            </div>
+                            <div class="member-info">
+                                <h3>Jakub P.</h3>
+                                <p class="role">Product Designer</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Návrh AI interakcií</li>
+                                <li>• Prototypovanie a testovanie</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/jakubp-placeholder" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Javlon -->
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="team-card-inner">
+                        <div class="card-front">
+                            <div class="initials-avatar">JI</div>
+                            <div class="member-info">
+                                <h3>Javlon I.</h3>
+                                <p class="role">Junior ML Researcher</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <ul
+                                style="font-size: 0.85rem; color: #fff; margin-bottom: 20px; text-align: left; padding-left: 10px;">
+                                <li>• Výskum nových modelov</li>
+                                <li>• Experimenty s RL</li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="https://github.com/javlon-placeholder" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="cases" class="panel-5">
+        <div class="container">
+            <h2 class="title-gradient section-title">Prípadové štúdie</h2>
+            <div class="grid grid-3">
+                <div class="glass-panel" style="padding: 30px;">
+                    <span class="layer-badge" style="margin-bottom: 15px;">VÝROBA</span>
+                    <h3>Automatická kontrola kvality</h3>
+                    <p style="margin: 15px 0; font-size: 0.9rem; color: var(--text-slate);">CV systém na detekciu
+                        mikro-trhlín v súčiastkach v reálnom čase.</p>
+                    <ul style="font-size: 0.8rem; color: var(--text-slate); margin-bottom: 15px; padding-left: 15px;">
+                        <li><strong>Výsledok:</strong> -30% manuálnej kontroly</li>
+                        <li><strong>Stack:</strong> Python, YOLOv8, PyTorch</li>
+                    </ul>
+                    <span class="layer-badge"
+                        style="background: rgba(34, 197, 94, 0.1); color: #22c55e; border-color: #22c55e;">PRODUKCIA</span>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <span class="layer-badge" style="margin-bottom: 15px;">ZÁKAZNÍCKY SERVIS</span>
+                    <h3>RAG Bot pre technickú dokumentáciu</h3>
+                    <p style="margin: 15px 0; font-size: 0.9rem; color: var(--text-slate);">Chatbot pre podporu, ktorý
+                        čerpá informácie z tisícov PDF manuálov.</p>
+                    <ul style="font-size: 0.8rem; color: var(--text-slate); margin-bottom: 15px; padding-left: 15px;">
+                        <li><strong>Výsledok:</strong> Ušetrené 8h/týždeň na agenta</li>
+                        <li><strong>Stack:</strong> LangChain, OpenAI, Qdrant</li>
+                    </ul>
+                    <span class="layer-badge"
+                        style="background: rgba(34, 197, 94, 0.1); color: #22c55e; border-color: #22c55e;">PRODUKCIA</span>
+                </div>
+                <div class="glass-panel" style="padding: 30px;">
+                    <span class="layer-badge" style="margin-bottom: 15px;">E-COMMERCE</span>
+                    <h3>Predikcia odlivu zákazníkov (Churn)</h3>
+                    <p style="margin: 15px 0; font-size: 0.9rem; color: var(--text-slate);">Analytický model na určenie
+                        pravdepodobnosti straty klienta.</p>
+                    <ul style="font-size: 0.8rem; color: var(--text-slate); margin-bottom: 15px; padding-left: 15px;">
+                        <li><strong>Výsledok:</strong> +15% presnosť predikcií</li>
+                        <li><strong>Stack:</strong> XGBoost, SQL, Docker</li>
+                    </ul>
+                    <span class="layer-badge"
+                        style="background: rgba(234, 179, 8, 0.1); color: #eab308; border-color: #eab308;">PILOT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="panel-6" id="projects">
+        <div class="container">
+            <h2 class="title-gradient section-title">Projekty</h2>
+            <div class="grid grid-3">
+                <!-- Project 1 -->
+                <div class="glass-panel project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=400&auto=format&fit=crop"
+                            alt="Vision Pro">
+                    </div>
+                    <div class="project-info">
+                        <span class="layer-badge">CV / PYTORCH</span>
+                        <h3>AI Vision Pro</h3>
+                        <p>Plne automatizovaná detekcia objektov pre priemyselné linky.</p>
+                        <ul style="font-size: 0.8rem; color: var(--text-slate); margin: 15px 0; padding-left: 15px;">
+                            <li><strong>Technológia:</strong> Custom YOLOv8, TensorRT</li>
+                            <li><strong>Klient:</strong> Výroba automobilov (anonymné)</li>
+                            <li><strong>Výsledok:</strong> 99.2% presnosť v reálnom čase</li>
+                        </ul>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="#contact" class="btn btn-primary demo-request-btn" data-project="AI Vision Pro"
+                                style="font-size: 0.8rem; padding: 10px 15px;">Požiadať o demo</a>
+                            <span class="layer-badge"
+                                style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); color: var(--text-slate); height: fit-content; margin-top: 5px;">PRIVATE
+                                DEMO</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="glass-panel project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?q=80&w=400&auto=format&fit=crop"
+                            alt="Chat Core">
+                    </div>
+                    <div class="project-info">
+                        <span class="layer-badge">NLP / LLM</span>
+                        <h3>NLP Chat Core</h3>
+                        <p>Jazykový model pre slovenský a český kontext s firemnou znalosťou.</p>
+                        <ul style="font-size: 0.8rem; color: var(--text-slate); margin: 15px 0; padding-left: 15px;">
+                            <li><strong>Technológia:</strong> GPT-4, Llama-3, LangChain</li>
+                            <li><strong>Klient:</strong> Advokátska kancelária / Podpora</li>
+                            <li><strong>Výsledok:</strong> Redukcia ticketov o 45%</li>
+                        </ul>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="#contact" class="btn btn-primary demo-request-btn" data-project="NLP Chat Core"
+                                style="font-size: 0.8rem; padding: 10px 15px;">Požiadať o demo</a>
+                            <span class="layer-badge"
+                                style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); color: var(--text-slate); height: fit-content; margin-top: 5px;">PRIVATE
+                                DEMO</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="glass-panel project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1633513280144-69c10023e720?q=80&w=400&auto=format&fit=crop"
+                            alt="Brain Sync">
+                    </div>
+                    <div class="project-info">
+                        <span class="layer-badge">SIGNAL / DL</span>
+                        <h3>Neural Sync</h3>
+                        <p>Analýza mozgových vĺn (EEG) pre rozhranie mozog-počítač.</p>
+                        <ul style="font-size: 0.8rem; color: var(--text-slate); margin: 15px 0; padding-left: 15px;">
+                            <li><strong>Technológia:</strong> Signal Processing, Transformers</li>
+                            <li><strong>Klient:</strong> Zdravotnícky výskum</li>
+                            <li><strong>Výsledok:</strong> Multimodálne spracovanie v ms</li>
+                        </ul>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="#contact" class="btn btn-primary demo-request-btn" data-project="Neural Sync"
+                                style="font-size: 0.8rem; padding: 10px 15px;">Požiadať o demo</a>
+                            <span class="layer-badge"
+                                style="background: rgba(168, 85, 247, 0.2); border-color: var(--primary); color: var(--primary); height: fit-content; margin-top: 5px;">RESEARCH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Outputs Section -->
+    <section id="awards" class="panel-7">
+        <div class="container">
+            <h2 class="title-gradient section-title">Výstupy a ocenenia</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-info">
+                        <h3>1. Miesto na Hackathone FEI</h3>
+                        <p style="color: var(--text-slate); font-size: 0.9rem;">Najlepší projekt v oblasti spracovania
+                            prirodzeného jazyka (NLP).</p>
+                    </div>
+                    <div class="award-meta">2024</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-info">
+                        <h3>Speaker: AI v Priemysle</h3>
+                        <p style="color: var(--text-slate); font-size: 0.9rem;">Odborná prednáška na medzinárodnej
+                            konferencii o digitálnej transformácii.</p>
+                    </div>
+                    <div class="award-meta">2023</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-info">
+                        <h3>Publikácia: Deep Learning on Edge</h3>
+                        <p style="color: var(--text-slate); font-size: 0.9rem;">Vedecký článok o optimalizácii
+                            neurónových sietí pre mobilné zariadenia.</p>
+                    </div>
+                    <div class="award-meta">2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog (Outputs) Section -->
+    <section class="panel-8" id="blog">
+        <div class="container">
+            <h2 class="title-gradient section-title">Výstupy</h2>
+            <p
+                style="text-align: center; color: var(--text-slate); margin-bottom: 40px; max-width: 600px; margin-inline: auto;">
+                Sledujte naše úspechy na hackathonoch, vystúpenia na konferenciách a najnovšie publikácie v oblasti AI.
+            </p>
+
+            <div class="carousel-container">
+                <div class="carousel-3d" id="news-carousel">
+                    <!-- Item 1 - Conference -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=400&auto=format&fit=crop"
+                                alt="Konferencia">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">Október 2024</span>
+                            <h3>Speaker: Slovakia Tech</h3>
+                            <p>Téma: Nasadzovanie LLM do lokálneho prostredia.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 - Hackathon -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=400&auto=format&fit=crop"
+                                alt="Hackathon">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">Apríl 2024</span>
+                            <h3>1. Miesto: FEI Hack</h3>
+                            <p>Výhra v kategórii najlepší NLP prototyp.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 - Publication -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=400&auto=format&fit=crop"
+                                alt="Publication">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">Január 2024</span>
+                            <h3>Vedecký článok: Edge AI</h3>
+                            <p>Publikované v Journal of Neural Networks.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 - Event -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&auto=format&fit=crop"
+                                alt="Workshop">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">December 2023</span>
+                            <h3>Workshop pre startupy</h3>
+                            <p>Praktické školenie o využití LangChain.</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 - Success -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=400&auto=format&fit=crop"
+                                alt="Research">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">September 2023</span>
+                            <h3>Nový AI Lab</h3>
+                            <p>Otvorenie dedikovaného vývojového klastra.</p>
+                        </div>
+                    </div>
+                    <!-- Item 6 - Media -->
+                    <div class="carousel-item">
+                        <div class="blog-img">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=400&auto=format&fit=crop"
+                                alt="Vision">
+                        </div>
+                        <div class="blog-content">
+                            <span class="date">Jún 2023</span>
+                            <h3>Ocenenie dekana</h3>
+                            <p>Za prínos v oblasti Computer Vision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="prevBtn">Naspäť</button>
+                    <button id="nextBtn">Ďalej</button>
+                </div>
+            </div>
+
+            <!-- List View (New for Clarity) -->
+            <div class="outputs-list" data-aos="fade-up" style="margin-top: 80px;">
+                <div class="outputs-award-list">
+                    <div class="outputs-award-item">
+                        <div class="award-info">
+                            <span class="layer-badge">HACKATHON</span>
+                            <h3>FEI Hackathon 2024</h3>
+                            <p>Vývoj decentralizovaného systému pre správu identít pomocou AI.</p>
+                        </div>
+                        <div class="award-meta">1. Miesto</div>
+                    </div>
+                    <div class="outputs-award-item">
+                        <div class="award-info">
+                            <span class="layer-badge">KONFERENCIA</span>
+                            <h3>SlovakiaTech Bratislava</h3>
+                            <p>Workshop: "Practical applications of RAG in enterprise environment".</p>
+                        </div>
+                        <div class="award-meta">Október 2024</div>
+                    </div>
+                    <div class="outputs-award-item">
+                        <div class="award-info">
+                            <span class="layer-badge">VÝSKUM</span>
+                            <h3>IEEE Conference – CV Excellence</h3>
+                            <p>Publikovanie metódy pre nízko-latentnú detekciu anomálií vo videu.</p>
+                        </div>
+                        <div class="award-meta">Máj 2023</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="panel-contact" id="contact" style="background: var(--bg-dark);">
+        <div class="container">
+            <h2 class="title-gradient section-title">Kontaktujte nás</h2>
+            <div class="contact-unified-card glass-panel" data-aos="fade-up">
+                <div class="contact-info-grid">
+                    <!-- Left Column -->
+                    <div class="contact-info-col">
+                        <h3 style="color: #fff; margin-bottom: 20px;">Máte nápad na projekt?</h3>
+                        <p style="color: var(--text-slate); margin-bottom: 25px; line-height: 1.6; font-size: 0.95rem;">
+                            Radi s vami prediskutujeme možnosti využitia AI vo vašom biznise.
+                        </p>
+                        <div class="info-item" style="margin-bottom: 15px;">
+                            <span
+                                style="color: var(--primary); font-weight: 800; display: block; font-size: 0.8rem; text-transform: uppercase;">Email:</span>
+                            <a href="mailto:info@ai-team.sk"
+                                style="color: #fff; text-decoration: none; font-size: 1.1rem;">info@ai-team.sk</a>
+                        </div>
+                        <div class="info-item">
+                            <span
+                                style="color: var(--primary); font-weight: 800; display: block; font-size: 0.8rem; text-transform: uppercase;">Odpoveď:</span>
+                            <span style="color: #fff;">Do 48 hodín</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="contact-info-col">
+                        <h3 style="color: #fff; margin-bottom: 20px;">Miesto pôsobenia</h3>
+                        <p style="color: var(--text-slate); margin-bottom: 20px; line-height: 1.6; font-size: 0.95rem;">
+                            Fakulta elektrotechniky a informatiky STU v Bratislave.
+                        </p>
+                        <div class="info-item" style="margin-bottom: 15px;">
+                            <span
+                                style="color: var(--primary); font-weight: 800; display: block; font-size: 0.8rem; text-transform: uppercase;">Adresa:</span>
+                            <span style="color: #fff;">Ilkovičova 3, 841 04 Bratislava</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Map Section -->
+                <div class="contact-map-wrapper">
+                    <iframe
+                        src="https://maps.google.com/maps?q=FEI%20STU%20Bratislava&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="panel-footer">
+        <div class="container" style="padding: 60px 20px; text-align: center;">
+            <div style="margin-bottom: 20px;">
+                <h3 class="title-gradient" style="font-size: 1.5rem;">AI-TEAM</h3>
+                <p style="color: var(--text-slate); font-size: 0.9rem; margin-top: 5px;">
+                    Výskumný a vývojový tím expertov pôsobiaci pri FEI STU v Bratislave.
+                </p>
+            </div>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+                <a href="#" class="icon">LinkedIn</a>
+                <a href="#" class="icon">GitHub</a>
+                <a href="#" class="icon">X / Twitter</a>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-slate);">&copy; 2024 AI-Team members. Všetky práva vyhradené.
+                | <a href="#" style="color: inherit;">Zásady GDPR</a></p>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="title-gradient">Ochrana súkromia</h2>
+            <div style="margin-top: 20px; color: var(--text-slate); line-height: 1.6;">
+                <p>Vaše súkromie je pre nás dôležité. Kontaktné údaje, ktoré nám poskytnete prostredníctvom formulára,
+                    používame výhradne na účely spätnej komunikácie ohľadom vášho dopytu.</p>
+                <p style="margin-top: 15px;"><strong>Aké údaje spracúvame?</strong><br>Meno a e-mailovú adresu.</p>
+                <p style="margin-top: 15px;"><strong>Doba uchovávania</strong><br>Údaje uchovávame po dobu nevyhnutnú na
+                    vybavenie vašej požiadavky, maximálne však 12 mesiacov.</p>
+                <p style="margin-top: 15px;"><strong>Vaše práva</strong><br>Kedykoľvek môžete požiadať o vymazanie
+                    vašich údajov zaslaním e-mailu na info@ai-team.sk.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
